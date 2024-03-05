@@ -34,7 +34,7 @@ export const Form = () => {
       resume.append("city", input.city);
       
       try {
-        const res = await axios.post("http://localhost:5000/application", resume );
+        const res = await axios.post("https://application-form-backend.onrender.com/application", resume );
         console.log(res.data)
         navigate("/success");
       }catch(err) {
