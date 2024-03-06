@@ -86,6 +86,7 @@ export const Form = () => {
           <p> - Conducting testing and debugging of server-side applications.</p>
           <p>- 5+ years of experience in web development, with a strong proficiency in Node and Express</p>
           <p> - Solid understanding of server-side programming languages, such as PHP, Python, or Java, and experience with RESTful API design and development.</p>
+          <p> - Proficiency in database design and management, including relational databases : MySQL, PostgreSQL and NoSQL databases </p>
         </div>
         <div>
           <h2>4. UX/UI Designer:</h2>
