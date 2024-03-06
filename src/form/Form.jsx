@@ -46,8 +46,72 @@ export const Form = () => {
   return (
     <div className='body'>
     <section className="container">
-    <img src="/richforth.jpg" className="img" />
+      <div className='header'>
+        <img src="/richforth.jpg" className="img" />
+        <h1>PROSPECTIVE ROLES PREVIEW.</h1>
+      </div>
     <div className="inner-container">
+      <div>
+        {/* <div>
+          <h2>1. Software Engineer/Developer:</h2>
+          <p> - Designing, coding, and testing software applications based on given requirements.</p>
+          <p> - Collaborating with cross-functional teams to develop and maintain software systems.</p>
+          <p> - Troubleshooting and debugging software issues.</p>
+          <p>- Writing clean, efficient, and maintainable code.</p>
+          <p>- Keeping up with emerging technologies and industry trends.</p>
+        </div> */}
+        <div>
+          <h2>1. Full-stack Developer::</h2>
+          <p> - Combining both front-end and back-end development responsibilities.</p>
+          <p> - Developing end-to-end web applications or services.</p>
+          <p> - Managing databases, server-side logic, and user interfaces.</p>
+          <p>- Collaborating with cross-functional teams throughout the development lifecycle.</p>
+          <p>- Ensuring seamless integration and smooth functionality of all application components.</p>
+          <p>- 5+ years of experience in web development, with a strong proficiency in HTML, CSS, Nodejs, JavaScript, and modern web frameworks like: React, Angular.</p>
+        </div>
+        <div>
+          <h2>2. Front-end Developer:</h2>
+          <p> - Implementing user interfaces using HTML, CSS, and JavaScript.</p>
+          <p> - Collaborating with designers to translate visual designs into functional web pages or applications.</p>
+          <p> - Optimizing web pages for performance and responsiveness.</p>
+          <p> - Ensuring cross-browser compatibility and accessibility.</p>
+          <p> - Integrating front-end components with back-end APIs.</p>
+        </div>
+        <div>
+          <h2>3. Back-end Developer:</h2>
+          <p>- Developing server-side logic and APIs to support web or mobile applications.</p>
+          <p> - Designing and optimizing databases and data models.</p>
+          <p> - Implementing security measures and data protection.</p>
+          <p> - Integrating external systems and services.</p>
+          <p> - Conducting testing and debugging of server-side applications.</p>
+          <p>- 5+ years of experience in web development, with a strong proficiency in Node and Express</p>
+          <p> - Solid understanding of server-side programming languages, such as PHP, Python, or Java, and experience with RESTful API design and development.</p>
+        </div>
+        <div>
+          <h2>4. UX/UI Designer:</h2>
+          <p>- Conducting user research and creating user personas.</p>
+          <p>- Designing user interfaces that are visually appealing, intuitive, and user-friendly.</p>
+          <p> - Creating wireframes, prototypes, and mockups to communicate design ideas.</p>
+          <p> - Collaborating with developers to ensure the feasibility of design concepts.</p>
+          <p> - Conducting usability testing and incorporating user feedback into the design.</p>
+        </div>
+        <div>
+          <h2>5. Data Scientist:</h2>
+          <p>- Analyzing complex data sets to identify patterns, trends, and insights.</p>
+          <p>- Developing and implementing machine learning models and algorithms.</p>
+          <p> - Building predictive models and data visualizations.</p>
+          <p> - Collaborating with stakeholders to define data requirements and use cases.</p>
+          <p> - Presenting findings and recommendations to non-technical stakeholders.</p>
+        </div>
+        <div>
+          <h2>6. DevOps Engineer & Project Managers:</h2>
+          <p>- Automating and streamlining software development processes.</p>
+          <p>- Managing and configuring infrastructure, servers, and cloud services.</p>
+          <p>- Implementing continuous integration and deployment pipelines.</p>
+          <p>- Monitoring system performance and ensuring high availability.</p>
+          <p>- Troubleshooting and resolving infrastructure-related issues.</p>
+        </div>
+      </div>
       <form action="#" className="form" onSubmit={handleSubmit}>
       <div className="input-box">
         <label>Full Name</label>
