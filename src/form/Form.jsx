@@ -7,6 +7,12 @@ import { useNavigate } from 'react-router-dom';
 export const Form = () => {
     const [input, setInput] = useState({});
     const [file, setFile] = useState('');
+    const [open, setOpen] = useState(false);
+    const [openBackend, setOpenBackend] = useState(false);
+    const [openFronted, setOpenFronted] = useState(false);
+    const [openUI, setOpenUI] = useState(false);
+    const [openDevOps, setOpenDevOps] = useState(false);
+    const [openDatascience, setOpenDataScience] = useState(false);
 
     const navigate = useNavigate();
   
@@ -16,6 +22,29 @@ export const Form = () => {
       setInput((prev) => {
         return {...prev, [name]: value}
       })
+    }
+
+    const handleView = () => {
+      setOpen(!open);
+    }
+
+    const handleFrontend = () => {
+
+    }
+
+    const handleBackend = () => {
+      setOpenBackend(!openBackend)
+    }
+    const handleUI = () => {
+      setOpenUI(!openUI)
+    }
+
+    const handleDatascience = () => {
+      setOpenDataScience(!openDatascience)
+    }
+
+    const handleDevOps = () => {
+      setOpenDevOps(!openDevOps)
     }
     
     const handleSubmit = async(e) => {
@@ -61,56 +90,147 @@ export const Form = () => {
           <p>- Keeping up with emerging technologies and industry trends.</p>
         </div> */}
         <div>
-          <h2>1. Full-stack Developer::</h2>
-          <p> - Combining both front-end and back-end development responsibilities.</p>
-          <p> - Developing end-to-end web applications or services.</p>
-          <p> - Managing databases, server-side logic, and user interfaces.</p>
-          <p>- Collaborating with cross-functional teams throughout the development lifecycle.</p>
-          <p>- Ensuring seamless integration and smooth functionality of all application components.</p>
-          <p>- 5+ years of experience in web development, with a strong proficiency in HTML, CSS, Nodejs, JavaScript, and modern web frameworks like: React, Angular.</p>
+          <div className='content'>
+          <h2>1. Full-stack Developer:</h2>
+          {!open ? (
+
+            <div className='view' onClick={handleView}>
+              +
+            </div>
+          ): (
+            <div className='view' onClick={handleView}>
+              -
+            </div>
+          )}
+          </div>
+          {open && (
+            <div className='viewoCntent'>
+              <p> - Combining both front-end and back-end development responsibilities.</p>
+              <p> - Developing end-to-end web applications or services.</p>
+              <p> - Managing databases, server-side logic, and user interfaces.</p>
+              <p>- Collaborating with cross-functional teams throughout the development lifecycle.</p>
+              <p>- Ensuring seamless integration and smooth functionality of all application components.</p>
+              <p>- 5+ years of experience in web development, with a strong proficiency in HTML, CSS, Nodejs, JavaScript, and modern web frameworks like: React, Angular.</p>
+            </div>
+          )}
         </div>
         <div>
+          <div className='content'>
           <h2>2. Front-end Developer:</h2>
-          <p> - Implementing user interfaces using HTML, CSS, and JavaScript.</p>
-          <p> - Collaborating with designers to translate visual designs into functional web pages or applications.</p>
-          <p> - Optimizing web pages for performance and responsiveness.</p>
-          <p> - Ensuring cross-browser compatibility and accessibility.</p>
-          <p> - Integrating front-end components with back-end APIs.</p>
+          {!open ? (
+            <div className='view' onClick={handleFrontend}>
+              +
+            </div>
+            ): (
+            <div className='view' onClick={handleFrontend}>
+              -
+            </div>
+            )}
+          </div>
+          {openFronted && (
+          <div className='viewContent'>
+            <p> - Implementing user interfaces using HTML, CSS, and JavaScript.</p>
+            <p> - Collaborating with designers to translate visual designs into functional web pages or applications.</p>
+            <p> - Optimizing web pages for performance and responsiveness.</p>
+            <p> - Ensuring cross-browser compatibility and accessibility.</p>
+            <p> - Integrating front-end components with back-end APIs.</p>
+          </div>
+          )}
         </div>
         <div>
+          <div className='content'>
           <h2>3. Back-end Developer:</h2>
-          <p>- Developing server-side logic and APIs to support web or mobile applications.</p>
-          <p> - Designing and optimizing databases and data models.</p>
-          <p> - Implementing security measures and data protection.</p>
-          <p> - Integrating external systems and services.</p>
-          <p> - Conducting testing and debugging of server-side applications.</p>
-          <p>- 5+ years of experience in web development, with a strong proficiency in Node and Express</p>
-          <p> - Solid understanding of server-side programming languages, such as PHP, Python, or Java, and experience with RESTful API design and development.</p>
-          <p> - Proficiency in database design and management, including relational databases : MySQL, PostgreSQL and NoSQL databases </p>
+            {!open ? (
+              <div className='view' onClick={handleBackend}>
+                +
+              </div>
+              ): (
+              <div className='view' onClick={handleBackend}>
+                -
+              </div>
+            )}
+          </div>
+          {openBackend && (
+            <div className='viewContent'>
+            <p>- Developing server-side logic and APIs to support web or mobile applications.</p>
+            <p> - Designing and optimizing databases and data models.</p>
+            <p> - Implementing security measures and data protection.</p>
+            <p> - Integrating external systems and services.</p>
+            <p> - Conducting testing and debugging of server-side applications.</p>
+            <p>- 5+ years of experience in web development, with a strong proficiency in Node and Express</p>
+            <p> - Solid understanding of server-side programming languages, such as PHP, Python, or Java, and experience with RESTful API design and development.</p>
+            <p> - Proficiency in database design and management, including relational databases : MySQL, PostgreSQL and NoSQL databases </p>
+          </div>
+          )}
         </div>
         <div>
-          <h2>4. UX/UI Designer:</h2>
-          <p>- Conducting user research and creating user personas.</p>
-          <p>- Designing user interfaces that are visually appealing, intuitive, and user-friendly.</p>
-          <p> - Creating wireframes, prototypes, and mockups to communicate design ideas.</p>
-          <p> - Collaborating with developers to ensure the feasibility of design concepts.</p>
-          <p> - Conducting usability testing and incorporating user feedback into the design.</p>
+          <div className='content'>
+            <h2>4. UX/UI Designer:</h2>
+            {!open ? (
+              <div className='view' onClick={handleUI}>
+                +
+              </div>
+              ): (
+              <div className='view' onClick={handleUI}>
+                -
+              </div>
+            )}
+          </div>
+          {openUI && (
+            <div className='viewContent'>
+            <p>- Conducting user research and creating user personas.</p>
+            <p>- Designing user interfaces that are visually appealing, intuitive, and user-friendly.</p>
+            <p> - Creating wireframes, prototypes, and mockups to communicate design ideas.</p>
+            <p> - Collaborating with developers to ensure the feasibility of design concepts.</p>
+            <p> - Conducting usability testing and incorporating user feedback into the design.</p>
+          </div>
+          )}
         </div>
         <div>
-          <h2>5. Data Scientist:</h2>
-          <p>- Analyzing complex data sets to identify patterns, trends, and insights.</p>
-          <p>- Developing and implementing machine learning models and algorithms.</p>
-          <p> - Building predictive models and data visualizations.</p>
-          <p> - Collaborating with stakeholders to define data requirements and use cases.</p>
-          <p> - Presenting findings and recommendations to non-technical stakeholders.</p>
+          <div  className='content'>    
+            <h2>5. Data Scientist:</h2>
+            {!open ? (
+              <div className='view' onClick={handleDatascience}>
+                +
+              </div>
+              ): (
+              <div className='view' onClick={handleDatascience}>
+                -
+              </div>
+            )}
+          </div>
+          {openDatascience && (
+            <div className='viewContent'>            
+            <p>- Analyzing complex data sets to identify patterns, trends, and insights.</p>
+            <p>- Developing and implementing machine learning models and algorithms.</p>
+            <p> - Building predictive models and data visualizations.</p>
+            <p> - Collaborating with stakeholders to define data requirements and use cases.</p>
+            <p> - Presenting findings and recommendations to non-technical stakeholders.</p>
+          </div>
+          )}
         </div>
         <div>
+          <div className='content'>           
           <h2>6. DevOps Engineer & Project Managers:</h2>
-          <p>- Automating and streamlining software development processes.</p>
-          <p>- Managing and configuring infrastructure, servers, and cloud services.</p>
-          <p>- Implementing continuous integration and deployment pipelines.</p>
-          <p>- Monitoring system performance and ensuring high availability.</p>
-          <p>- Troubleshooting and resolving infrastructure-related issues.</p>
+          {!open ? (
+              <div className='view' onClick={handleDevOps}>
+                +
+              </div>
+              ): (
+              <div className='view' onClick={handleDevOps}>
+                -
+              </div>
+            )}
+          </div>
+          {openDevOps && (
+            <div className='viewContent'>          
+            <p>- Automating and streamlining software development processes.</p>
+            <p>- Managing and configuring infrastructure, servers, and cloud services.</p>
+            <p>- Implementing continuous integration and deployment pipelines.</p>
+            <p>- Monitoring system performance and ensuring high availability.</p>
+            <p>- Troubleshooting and resolving infrastructure-related issues.</p>
+          </div>
+          )}
         </div>
       </div>
       <form action="#" className="form" onSubmit={handleSubmit}>
