@@ -7,12 +7,6 @@ import { useNavigate } from 'react-router-dom';
 export const Form = () => {
     const [input, setInput] = useState({});
     const [file, setFile] = useState('');
-    const [open, setOpen] = useState(false);
-    const [openBackend, setOpenBackend] = useState(false);
-    const [openFronted, setOpenFronted] = useState(false);
-    const [openUI, setOpenUI] = useState(false);
-    const [openDevOps, setOpenDevOps] = useState(false);
-    const [openDatascience, setOpenDataScience] = useState(false);
 
     const navigate = useNavigate();
   
@@ -23,30 +17,6 @@ export const Form = () => {
         return {...prev, [name]: value}
       })
     }
-
-    const handleView = () => {
-      setOpen(!open);
-    }
-
-    const handleFrontend = () => {
-
-    }
-
-    const handleBackend = () => {
-      setOpenBackend(!openBackend)
-    }
-    const handleUI = () => {
-      setOpenUI(!openUI)
-    }
-
-    const handleDatascience = () => {
-      setOpenDataScience(!openDatascience)
-    }
-
-    const handleDevOps = () => {
-      setOpenDevOps(!openDevOps)
-    }
-    
     const handleSubmit = async(e) => {
       e.preventDefault();
   
