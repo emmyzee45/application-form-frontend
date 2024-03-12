@@ -121,9 +121,18 @@ input[type="file"] {
   background: rgb(88, 56, 250);
 }
 /*Responsive*/
+@media screen and (max-width: 700px) {
+  .form .input-box {
+    max-width: 96%;
+  }
+
+}
 @media screen and (max-width: 500px) {
   .form .column {
     flex-wrap: wrap;
+  }
+  .form .input-box {
+    max-width: 90%;
   }
   .form :where(.gender-option, .gender) {
     row-gap: 15px;
