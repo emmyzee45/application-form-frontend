@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import "./home.css";
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
   }
   return (
     <div className='home-container'>
-      <h1>OPen Roles At Richforth Ltd</h1>
+      <h1 className='title'>OPen Roles At Richforth Ltd</h1>
       <div>
         We are delighted to announce that RICHFORTH Ltd, a renowned company specializing in property legalizations and compliance services and consultancies, is pleased to collaborate with the esteemed IT department of GIKIHUBS GROUP. This exciting partnership aims to open up new avenues for technological expertise within our organization.
         we always recognize the importance of incorporating new technology into our operations for enhanced efficiency and service delivery.
@@ -202,9 +203,9 @@ export default function Home() {
           </div>
           )}
         </div>
-        <a href='/application-form'>
+        <Link to="/application">
           <button className='apply'>Apply Now!!</button>
-        </a>
+        </Link>
       </div>
     </div>
     </div>

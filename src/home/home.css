@@ -52,3 +52,34 @@ cursor: pointer;
     font-weight: 550;
     font-size: medium;
 }
+
+@media screen and (max-width: 1028px) {
+    .home-container {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .home-container {
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width: 544px) {
+   .title {
+        font-size: 30px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+    .home-container {
+        padding: 0 20px;
+        line-height: normal;
+    }
+    .title {
+        font-size: 26px;
+    }
+    .apply {
+        font-weight: 550;
+        font-size: small;
+    }
+}
