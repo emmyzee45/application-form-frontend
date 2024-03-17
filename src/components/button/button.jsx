@@ -7,8 +7,6 @@ class Button extends React.Component {
       content,
       ...others
     } = this.props;
-    
-    // Define default class name if variant is not provided
     const className = variant ? `button ${variant}` : 'button';
     
     return (
