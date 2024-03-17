@@ -2,6 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "../button/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -10,7 +11,9 @@ const Hero = () => {
         <div className="heroInner">
           <span>
             <h1>Open Roles At Richforth Ltd</h1>
-            <Button content="Apply Now" variant="green" />
+            <Link to="/application">
+              <Button content="Apply Now" variant="green" />
+            </Link>
           </span>
         </div>
       </HeroSection>
