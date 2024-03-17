@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Form } from "./components/form/Form";
-import { Success } from "./succes/Success";
+import { Success } from "./components/succes/Success";
 import Home from "./components/home/Home";
 import Hero from "./components/hero/hero";
 function App() {
