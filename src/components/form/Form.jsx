@@ -46,7 +46,7 @@ export const Form = () => {
     <div className='body'>
     <section className="container">
       <div className='header'>
-        <img src="/richforth.jpg" className="img" />
+        <img src="/richforth.jpg" className="img" alt='company logo'/>
         <h1>APPLICATION FORM.</h1>
       </div>
       <div className='inner-container'>
