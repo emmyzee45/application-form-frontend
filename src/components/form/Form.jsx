@@ -73,7 +73,7 @@ export const Form = () => {
         <div className="gender-option">
           <div className="gender">
             <input type="radio" id="check-male" onChange={handleInput} name="gender" value="male" required />
-            <label for="check-male">male</label>
+            <label for="check-male">Male</label>
           </div>
           <div className="gender">
             <input type="radio" id="check-female" onChange={handleInput} name="gender" value='female' required />
@@ -81,7 +81,7 @@ export const Form = () => {
           </div>
           <div className="gender">
             <input type="radio" id="check-other" onChange={handleInput} name="gender" value="unKnown" required/>
-            <label for="check-other">prefer not to say</label>
+            <label for="check-other">Prefer not to say</label>
           </div>
         </div>
       </div>
